@@ -1,5 +1,4 @@
 function getUsuarios(){
-
     let xmlhttp;
     let remite = document.getElementById('reu_remitente').value;
     if(window.XMLHttpRequest){

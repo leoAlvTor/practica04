@@ -4,6 +4,16 @@
     <list default="true" id="b12118a9-1f9c-410c-bd8c-a1131e8ce0d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Practica/.idea/Practica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica/.idea/Practica.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Practica/JavaScript/ScriptForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica/JavaScript/ScriptForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/LogIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/LogIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controlador/user/controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/controlador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controlador/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vista/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vista/user/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/controlador/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/controlador/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vista/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vista/Login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +87,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Practica" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -87,7 +97,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
-      <path value="C:/php/pear" />
+      <path value="A:/Leo" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TnvJ90E4IDyDdr7bryO2y99xn3" />
@@ -95,13 +105,14 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="db2&#10;mariadb" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="A:/Leo/php.exe" />
+    <property name="last_opened_file_path" value="A:/Leo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -172,6 +183,8 @@
       <workItem from="1574457854741" duration="2649000" />
       <workItem from="1574466633261" duration="2214000" />
       <workItem from="1574471315438" duration="57000" />
+      <workItem from="1574515594973" duration="1480000" />
+      <workItem from="1574522714260" duration="1814000" />
     </task>
     <servers />
   </component>
