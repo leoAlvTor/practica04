@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../CSS/Style.css">
+    <title>Registro</title>
+</head>
+<body>
+<form id="formulario01" method="POST" action="../controlador/crear_usuario.php">
+    <label>Cedula:</label>
+    <label>
+        <input name="cedula" id="cedula" value='' type="text">
+    </label>
+    <br>
+    <label>Nombre:</label>
+    <label for="nombre">
+        <input name="nombre" id="nombre"type="text" value=''>
+    </label>
+    <br>
+    <label>Apellido:</label>
+    <label>
+        <input name="apellido" id="apellido" type="text" value=''>
+    </label>
+    <br>
+    <label>Direccion:</label>
+    <label>
+        <input name="direccion" id="direccion" type="text" value=''>
+    </label>
+    <br>
+    <label>Telefono:</label>
+    <label>
+        <input name="telefono" type="text" value='' id="telefono">
+    </label>
+    <br>
+    <label>Email:</label>
+    <label>
+        <input name="correo" id="correo" type="email" value="">
+    </label>
+
+    <br>
+    <label>Contrasena:</label>
+    <label>
+        <input name="password" id="password" type="password" value="">
+    </label>
+    <br>
+    <label>Fecha de nacimiento:</label>
+    <label>
+        <input name="fecha" type="date"  value='' id="fecha">
+    </label>
+    <br><br>
+    <input type="submit" id="crear" name="crear" value="Aceptar"/>
+    <br>
+</form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Practica/.idea/Practica.iml" filepath="$PROJECT_DIR$/../Practica/.idea/Practica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Practica04.iml" filepath="$PROJECT_DIR$/.idea/Practica04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SistemaDeGestion/.idea/SistemaDeGestion.iml" filepath="$PROJECT_DIR$/../SistemaDeGestion/.idea/SistemaDeGestion.iml" />
+    </modules>
+  </component>
+</project>

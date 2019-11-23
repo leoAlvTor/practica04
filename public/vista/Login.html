@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/LogIn.css">
+    <script rel="script" type="text/javascript" src="../controlador/login.js"></script>
+
+</head>
+<body>
+<form id="formulario" method="post" onsubmit="return logeo()" action="../controlador/login.php">
+    <p>SISTEMA DE REUNIONES HIPERMEDIAL</p><br>
+    <label for="usu_correo"></label><input id="usu_correo" name="usu_correo" type="email" placeholder="Ingrese su correo aqui."><br>
+    <label></label><br>
+    <label for="usu_contrasena"></label><input id="usu_contrasena" name="usu_contrasena" type="password" placeholder="******"><br>
+    <input type="submit" id="login" name="login" value="Iniciar Sesion">
+</form>
+
+<div id="datos">
+
+</div>
+
+</body>
+</html>
