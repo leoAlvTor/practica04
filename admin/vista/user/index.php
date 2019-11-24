@@ -10,11 +10,15 @@
             let params = new URLSearchParams(location.search);
             document.getElementById('reu_remitente').value = params.get('correo');
             getUsuarios();
+            getReuniones();
+        }
+        function addInvitado() {
+            document.getElementById('invitados').value = document.getElementById('invitados').value + document.getElementById('comboUsuarios').value + ',';
+            cerrarModal();
         }
     </script>
 
     <script rel="script" type="text/javascript" src="../../../CSS/modal.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../../../CSS/LogIn.css">
 </head>
 <style>
@@ -22,6 +26,24 @@
         width: 50%;
         height: 30px;
     }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 70%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #d2ff00;
+    }
+
 </style>
 
 <body onload="remitente()">

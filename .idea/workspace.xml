@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b12118a9-1f9c-410c-bd8c-a1131e8ce0d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/modal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controlador/user/controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/controlador.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controlador/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/vista/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vista/user/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vista/Crear_Usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vista/Crear_Usuario.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +186,8 @@
       <workItem from="1574522714260" duration="2780000" />
       <workItem from="1574526331649" duration="4231000" />
       <workItem from="1574563432889" duration="1040000" />
-      <workItem from="1574609992628" duration="5478000" />
+      <workItem from="1574609992628" duration="13462000" />
+      <workItem from="1574625970910" duration="8135000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Formulario para registro de reuniones.">
       <created>1574525473331</created>
@@ -193,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574525473331</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ajax with Post instead of GET">
+      <created>1574617800503</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574617800503</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +224,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit Formulario para registro de reuniones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Formulario para registro de reuniones." />
+    <MESSAGE value="Ajax with Post instead of GET" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajax with Post instead of GET" />
   </component>
 </project>
