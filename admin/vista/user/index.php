@@ -12,7 +12,9 @@
             getUsuarios();
         }
     </script>
+
     <script rel="script" type="text/javascript" src="../../../CSS/modal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../../../CSS/LogIn.css">
 </head>
 <style>
@@ -24,7 +26,7 @@
 
 <body onload="remitente()">
 
-<form id = "formulario" onsubmit="">
+<form id = "formulario" method="post" onsubmit="return crearReunion2()">
 
     <label for="reu_fecha">Fecha de la reunion:</label><br>
     <input type="date" id="reu_fecha" name="reu_fecha"><br>
@@ -73,6 +75,5 @@
 
 
 <?php
-$valor = $_GET['correo'];
-echo "";
+
 ?>

@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b12118a9-1f9c-410c-bd8c-a1131e8ce0d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Practica/.idea/Practica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica/.idea/Practica.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practica/JavaScript/ScriptForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica/JavaScript/ScriptForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/LogIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/LogIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/Style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controlador/user/controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/controlador.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controlador/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/vista/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vista/user/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/controlador/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/controlador/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vista/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vista/Login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +79,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="leoAlvTor &lt;calvaradot1@est.ups.edu.ec&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
@@ -112,7 +109,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -184,8 +181,19 @@
       <workItem from="1574466633261" duration="2214000" />
       <workItem from="1574471315438" duration="57000" />
       <workItem from="1574515594973" duration="1480000" />
-      <workItem from="1574522714260" duration="1814000" />
+      <workItem from="1574522714260" duration="2780000" />
+      <workItem from="1574526331649" duration="4231000" />
+      <workItem from="1574563432889" duration="1040000" />
+      <workItem from="1574609992628" duration="5478000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit Formulario para registro de reuniones.">
+      <created>1574525473331</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574525473331</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,5 +211,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit Formulario para registro de reuniones." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Formulario para registro de reuniones." />
   </component>
 </project>
