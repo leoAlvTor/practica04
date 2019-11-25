@@ -1486,7 +1486,6 @@
     <column id="363" parent="335" name="usuario_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="364" parent="335" name="reunion_id">

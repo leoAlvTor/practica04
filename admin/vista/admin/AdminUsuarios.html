@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../../../CSS/LogIn.css">
+    <script rel="script" type="text/javascript" src="../../controlador/admin/index.js"></script>
+</head>
+<body>
+<form method="post" onsubmit="return fun_tonta()">
+    <input id="id" name="id" type="hidden"><br>
+    <label for="buscar">Correo del usuario</label><br><input id="buscar" name = "buscar" type="text">
+    <input type="submit" id="buscar_usuario" value="Buscar Usuario" onclick="buscarUsuario()"><br>
+
+    <label for="cedula">Cedula</label><br><input id="cedula" name = "cedula" type="number"><br>
+    <label for="nombre">Nombre</label><br><input id="nombre" name = "nombre" type="text"><br>
+    <label for="apellido">Apellido</label><br><input id="apellido" name = "apellido" type="text"><br>
+    <label for="direccion">Direccion</label><br><input id="direccion" name = "direccion" type="text"><br>
+    <label for="telefono">Telefono</label><br><input id="telefono" name = "telefono" type="number"><br>
+    <label for="correo">Correo</label><br><input id="correo" name = "correo" type="mail"><br>
+    <label for="password">Password</label><br><input id="password" name = "password" type="password"><br>
+    <label for="fecha_nac">Fecha Nacimiento</label><br><input id="fecha_nac" name = "fecha_nac" type="date"><br>
+    <input type="submit" id="actualizar" value="Actualizar Cuenta" onclick="actualizar_usuario()"><br>
+    <input type="submit" id="eliminar" value="Eliminar Cuenta" onclick="eliminar_usuario()">
+
+</form>
+    <div id="mensajes">
+
+    </div>
+</body>
+</html>

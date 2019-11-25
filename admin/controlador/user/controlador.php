@@ -1,9 +1,6 @@
 <?php
 
     include '../../../config/conexionDB.php';
-
-    var_dump($_POST);
-
     if($_POST['funcion'] === 'usuarios'){
         global $conexion;
         $remite_mail = $_POST['remite'];
@@ -28,7 +25,6 @@
     }else if($_POST['funcion'] === 'bscMotivo'){
         getearReunionesMotivo();
     }else if($_POST['funcion'] === 'update'){
-        echo "ENTRO A LA FUNCA";
         updateUsuario();
     }
 

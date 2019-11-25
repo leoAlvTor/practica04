@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrador</title>
+    <script rel="script" type="text/javascript" src="../../controlador/admin/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../CSS/LogIn.css">
+    <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #d2ff00;
+        }
+    </style>
+</head>
+<body onload="getReuniones()">
+    <button id="boton" onclick="adminUsuarios()"> Administrar Cuentas </button><br><br><br><br>
+    <div id="reuniones">
+
+    </div>
+    <div id="mensajes">
+
+    </div>
+
+</body>
+</html>

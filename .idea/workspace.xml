@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b12118a9-1f9c-410c-bd8c-a1131e8ce0d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/controlador/admin/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/vista/admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e712ce7-9253-4b0b-a90d-7c9d05441545.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e712ce7-9253-4b0b-a90d-7c9d05441545.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controlador/admin/adminCuentas.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/admin/controlador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controlador/admin/userCuentas.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controlador/user/controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/controlador.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controlador/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/vista/user/ActualizarDatos.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vista/user/ActualizarDatos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vista/admin/CuentaAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vista/admin/AdminUsuarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vista/admin/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vista/user/CuentaUser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/controlador/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/controlador/login.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +81,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -152,17 +159,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@63a3997a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@63a3997a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4bf885a9" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -196,7 +193,7 @@
       <workItem from="1574526331649" duration="4231000" />
       <workItem from="1574563432889" duration="1040000" />
       <workItem from="1574609992628" duration="13462000" />
-      <workItem from="1574625970910" duration="23125000" />
+      <workItem from="1574625970910" duration="32381000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Formulario para registro de reuniones.">
       <created>1574525473331</created>
@@ -226,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574649457457</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Actualizar datos de los usuarios">
+      <created>1574652285489</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574652285489</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +254,7 @@
     <MESSAGE value="Ajax with Post instead of GET" />
     <MESSAGE value="Reuniones funcionando" />
     <MESSAGE value="Busqueda por motivo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Busqueda por motivo" />
+    <MESSAGE value="Actualizar datos de los usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizar datos de los usuarios" />
   </component>
 </project>

@@ -56,28 +56,29 @@ function editarCuenta(){
 }
 
 function actualizarCuenta(){
-    let id_original = document.getElementById('id').value;
-    let cedula = document.getElementById('cedula').value;
-    let nombre = document.getElementById('nombre').value;
-    let apellido = document.getElementById('apellido').value;
-    let direccion = document.getElementById('direccion').value;
-    let telefono = document.getElementById('telefono').value;
-    let correo = document.getElementById('correo').value;
-    let pass = document.getElementById('password').value;
-    let fecha = document.getElementById('fecha_nac').value;
+        let id_original = document.getElementById('id').value;
+        let cedula = document.getElementById('cedula').value;
+        let nombre = document.getElementById('nombre').value;
+        let apellido = document.getElementById('apellido').value;
+        let direccion = document.getElementById('direccion').value;
+        let telefono = document.getElementById('telefono').value;
+        let correo = document.getElementById('correo').value;
+        let pass = document.getElementById('password').value;
+        let fecha = document.getElementById('fecha_nac').value;
 
-    let xmlhttp = new XMLHttpRequest();
-    let url = '/practica04/admin/controlador/user/controlador.php';
-    let params = 'funcion=update&id='+id_original+"&cedula="+cedula+"&nombre="+nombre+"&apellido="+apellido+
-        "&direccion="+direccion+"&telefono="+telefono+"&correo="+correo+"&pass="+pass+"&fecha="+fecha;
-    xmlhttp.open('POST', url, true);
-    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xmlhttp.onreadystatechange = function () {
-        if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
-           alert(this.responseText);
-        }
-    };
-    xmlhttp.send(params);
+        let xmlhttp = new XMLHttpRequest();
+        let url = '/practica04/admin/controlador/user/controlador.php';
+        let params = 'funcion=update&id=' + id_original + "&cedula=" + cedula + "&nombre=" + nombre + "&apellido=" + apellido +
+            "&direccion=" + direccion + "&telefono=" + telefono + "&correo=" + correo + "&pass=" + pass + "&fecha=" + fecha;
+        xmlhttp.open('POST', url, true);
+        xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+                document.getElementById('mensajes').innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.send(params);
+
     return false;
 }
 

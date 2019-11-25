@@ -12,7 +12,7 @@ function logeo(){
             if(this.responseText === '0'){
                 document.getElementById('datos').innerHTML = "<h1>NO SE ENCUENTRA REGISTRADO</h1><br><a href='../vista/Crear_Usuario.html'>Crear nuevo usuario</a>";
             }else if(this.responseText.includes('yes')){
-                window.location='../../admin/vista/admin/index.php';
+                window.location='../../admin/vista/admin/index.html';
             }else if(this.responseText.includes('no')){
                 window.location ='../../admin/vista/user/index.php?correo='+correo;
             }
