@@ -12,6 +12,7 @@
 <body>
     
 <?php
+
 include "../../config/conexionDB.php";
 $cedula = isset($_POST['cedula']) ? trim($_POST['cedula']) : null;
 $nombre = isset($_POST['nombre']) ? mb_strtoupper(trim($_POST['nombre']), 'UTF-8') : null;

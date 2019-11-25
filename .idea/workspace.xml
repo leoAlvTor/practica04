@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b12118a9-1f9c-410c-bd8c-a1131e8ce0d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/controlador/admin/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/vista/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e712ce7-9253-4b0b-a90d-7c9d05441545.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e712ce7-9253-4b0b-a90d-7c9d05441545.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controlador/admin/adminCuentas.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/admin/controlador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controlador/admin/userCuentas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controlador/admin/controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/admin/controlador.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controlador/user/controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/controlador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controlador/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/vista/admin/CuentaAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vista/admin/AdminUsuarios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/vista/admin/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/vista/user/CuentaUser.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/controlador/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/controlador/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vista/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vista/user/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/controlador/crear_usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/controlador/crear_usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/controlador/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/controlador/login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,8 +106,11 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1TnvJ90E4IDyDdr7bryO2y99xn3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="db2&#10;mariadb" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -193,7 +196,8 @@
       <workItem from="1574526331649" duration="4231000" />
       <workItem from="1574563432889" duration="1040000" />
       <workItem from="1574609992628" duration="13462000" />
-      <workItem from="1574625970910" duration="32381000" />
+      <workItem from="1574625970910" duration="34738000" />
+      <workItem from="1574681863563" duration="593000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Formulario para registro de reuniones.">
       <created>1574525473331</created>
@@ -230,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574652285489</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modulo administrador funcionando.">
+      <created>1574662083917</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574662083917</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,11 +261,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Commit Formulario para registro de reuniones." />
     <MESSAGE value="Ajax with Post instead of GET" />
     <MESSAGE value="Reuniones funcionando" />
     <MESSAGE value="Busqueda por motivo" />
     <MESSAGE value="Actualizar datos de los usuarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizar datos de los usuarios" />
+    <MESSAGE value="Modulo administrador funcionando." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modulo administrador funcionando." />
   </component>
 </project>

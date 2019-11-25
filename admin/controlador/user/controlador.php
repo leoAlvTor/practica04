@@ -1,5 +1,8 @@
 <?php
-
+    session_start();
+        if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE){
+            header('Location: ../../../public/vista/Login.html');
+        }
     include '../../../config/conexionDB.php';
     if($_POST['funcion'] === 'usuarios'){
         global $conexion;
@@ -32,7 +35,7 @@
         $remitente_mail = $_POST['remite'];
         global $conexion;
         $sql = "select reu_fecha, reu_hora, reu_lugar, reu_coord_lat, reu_coord_lon, reu_motivo, reu_observaciones
-            from reunion where reu_remitente = (select usu_codigo from usuario where usu_correo = upper('$remitente_mail'))";
+            from reunion where reu_remitente = (select usu_codigo from usuario where usu_correo = upper('$remitente_mail') order by reu_fecha)";
         $resultados = $conexion->query($sql);
         if($resultados->num_rows>0){
             echo "<table id='tablita'>";
