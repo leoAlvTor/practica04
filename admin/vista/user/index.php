@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Panel Usuario</title>
@@ -48,6 +48,8 @@
 
 <body onload="remitente()">
 
+<button id="boton" onclick="editarCuenta()"> Mi Cuenta </button>
+
 <form id = "formulario" method="post" onsubmit="return crearReunion2()">
 
     <label for="reu_fecha">Fecha de la reunion:</label><br>
@@ -76,11 +78,14 @@
     </p>
 </div>
 
-<div id="div_datos">
+<div id="div_busqueda">
+    <label for="txt_buscar">Ingrese el motivo:</label><br>
+    <input type="text" id="txt_buscar" name="txt_buscar" onkeyup="buscarXMotivo()"><br>
+    <p id="div_datos">
 
+    </p>
 </div>
 <div id="myModal" class="modal">
-    <!-- Modal content -->
     <div class="modal-content">
         <span class="close">&times;</span>
         <p id = 'aqui_usuario'></p>
@@ -89,13 +94,5 @@
     </div>
 
 </div>
-
 </body>
-
 </html>
-
-
-
-<?php
-
-?>

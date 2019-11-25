@@ -23,16 +23,20 @@
         crearReunion();
     }else if($_POST['funcion'] === 'getreuniones'){
         getearReuniones();
+    }else if($_POST['funcion'] === 'bscMotivo'){
+        getearReunionesMotivo();
+    }else if($_POST['funcion'] === 'actualizar'){
+        updateUsuario();
     }
 
     function getearReuniones(){
         $remitente_mail = $_POST['remite'];
         global $conexion;
         $sql = "select reu_fecha, reu_hora, reu_lugar, reu_coord_lat, reu_coord_lon, reu_motivo, reu_observaciones
-            from reunion where reu_remitente = (select usu_codigo from usuario where usu_correo = '$remitente_mail')";
+            from reunion where reu_remitente = (select usu_codigo from usuario where usu_correo = upper('$remitente_mail'))";
         $resultados = $conexion->query($sql);
         if($resultados->num_rows>0){
-            echo "<table>";
+            echo "<table id='tablita'>";
             echo "<tr>";
             echo "<th>Fecha</th>";
             echo "<th>Hora</th>";
@@ -55,6 +59,41 @@
             }
             echo "</table>";
         }
+        $conexion->close();
+    }
+
+    function getearReunionesMotivo(){
+        $remitente_mail = $_POST['remite'];
+        $motivo = $_POST['motivo'];
+        global $conexion;
+        $sql = "select reu_fecha, reu_hora, reu_lugar, reu_coord_lat, reu_coord_lon, reu_motivo, reu_observaciones
+            from reunion where reu_remitente = (select usu_codigo from usuario where usu_correo = '$remitente_mail') and reu_motivo LIKE '%".$motivo."%'";
+        $resultados = $conexion->query($sql);
+        if($resultados->num_rows>0){
+            echo "<table id='tablita'>";
+            echo "<tr>";
+            echo "<th>Fecha</th>";
+            echo "<th>Hora</th>";
+            echo "<th>Lugar</th>";
+            echo "<th>Latitud</th>";
+            echo "<th>Longitud</th>";
+            echo "<th>Motivo</th>";
+            echo "<th>Observaciones</th>";
+            echo "</tr>";
+            while($row = $resultados->fetch_assoc()){
+                echo "<tr>";
+                echo "<td>" . $row['reu_fecha'] . "</td>";
+                echo "<td>" . $row['reu_hora'] . "</td>";
+                echo "<td>" . $row['reu_lugar'] . "</td>";
+                echo "<td>" . $row['reu_coord_lat'] . "</td>";
+                echo "<td>" . $row['reu_coord_lon'] . "</td>";
+                echo "<td>" . $row['reu_motivo'] . "</td>";
+                echo "<td>" . $row['reu_observaciones'] . "</td>";
+                echo "</tr>";
+            }
+            echo "</table>";
+        }
+        $conexion->close();
     }
 
     function crearReunion(){
@@ -85,4 +124,8 @@
             echo "<h1>$conexion->error</h1>";
         }
         $conexion->close();
+    }
+
+    function updateUsuario(){
+
     }

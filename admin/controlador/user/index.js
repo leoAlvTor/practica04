@@ -30,6 +30,58 @@ function getReuniones(){
     return false;
 }
 
+function buscarXMotivo(){
+    let remite = document.getElementById('reu_remitente').value;
+    let motivo = document.getElementById('txt_buscar').value;
+    let xmlhttp = new XMLHttpRequest();
+    let url = '/practica04/admin/controlador/user/controlador.php';
+    let params = 'funcion=bscMotivo&remite='+remite+"&motivo="+motivo;
+    xmlhttp.open('POST', url, true);
+    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xmlhttp.onreadystatechange = function () {
+        if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+            let elemento = document.getElementById('tablita');
+            if(typeof(elemento) != 'undefined' && elemento != null){
+                elemento.parentNode.removeChild(elemento);
+            }
+            document.getElementById('div_datos').innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.send(params);
+    return false;
+}
+
+function editarCuenta(){
+    alert('ES SHAMADO');
+    window.location='../../vista/user/ActualizarDatos.html';
+}
+
+function actualizarCuenta(){
+    let id_original = document.getElementById('id').value;
+    let cedula = document.getElementById('cedula').value;
+    let nombre = document.getElementById('nombre').value;
+    let apellido = document.getElementById('apellido').value;
+    let direccion = document.getElementById('direccion').value;
+    let telefono = document.getElementById('telefono').value;
+    let correo = document.getElementById('correo').value;
+    let pass = document.getElementById('password').value;
+    let fecha = document.getElementById('fecha_nac').value;
+
+    let xmlhttp = new XMLHttpRequest();
+    let url = '/practica04/admin/controlador/user/controlador.php';
+    let params = 'funcion=update&id='+id_original+"&cedula="+cedula+"&nombre="+nombre+"&apellido="+apellido+
+        "&direccion="+direccion+"&telefono="+telefono+"&correo="+correo+"&pass="+pass+"&fecha="+fecha;
+    xmlhttp.open('POST', url, true);
+    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlenconded');
+    xmlhttp.onreadystatechange = function () {
+        if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+            document.getElementById('retorno').value = this.responseText;
+        }
+    };
+    xmlhttp.send(params);
+    return false;
+}
+
 function crearReunion2(){
     let invitados = document.getElementById('invitados').value;
     let remite = document.getElementById('reu_remitente').value;

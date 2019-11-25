@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b12118a9-1f9c-410c-bd8c-a1131e8ce0d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/vista/user/ActualizarDatos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/LogIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/LogIn.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controlador/user/controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/controlador.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controlador/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controlador/user/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vista/user/Usuario.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/vista/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vista/user/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vista/Crear_Usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/vista/Crear_Usuario.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,9 +75,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -187,7 +188,7 @@
       <workItem from="1574526331649" duration="4231000" />
       <workItem from="1574563432889" duration="1040000" />
       <workItem from="1574609992628" duration="13462000" />
-      <workItem from="1574625970910" duration="8135000" />
+      <workItem from="1574625970910" duration="20505000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Formulario para registro de reuniones.">
       <created>1574525473331</created>
@@ -203,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574617800503</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Reuniones funcionando">
+      <created>1574634608585</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574634608585</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +233,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit Formulario para registro de reuniones." />
     <MESSAGE value="Ajax with Post instead of GET" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajax with Post instead of GET" />
+    <MESSAGE value="Reuniones funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reuniones funcionando" />
   </component>
 </project>
