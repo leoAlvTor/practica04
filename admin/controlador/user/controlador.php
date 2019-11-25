@@ -2,6 +2,8 @@
 
     include '../../../config/conexionDB.php';
 
+    var_dump($_POST);
+
     if($_POST['funcion'] === 'usuarios'){
         global $conexion;
         $remite_mail = $_POST['remite'];
@@ -25,7 +27,8 @@
         getearReuniones();
     }else if($_POST['funcion'] === 'bscMotivo'){
         getearReunionesMotivo();
-    }else if($_POST['funcion'] === 'actualizar'){
+    }else if($_POST['funcion'] === 'update'){
+        echo "ENTRO A LA FUNCA";
         updateUsuario();
     }
 
@@ -127,5 +130,24 @@
     }
 
     function updateUsuario(){
+        global $conexion;
+        $id_org = $_POST['id'];
+        $cedula = $_POST['cedula'];
+        $nombre = $_POST['nombre'];
+        $apellido = $_POST['apellido'];
+        $direccion = $_POST['direccion'];
+        $telefono = $_POST['telefono'];
+        $correo = $_POST['correo'];
+        $pass = $_POST['pass'];
+        $fecha = $_POST['fecha'];
 
+        $sql = "UPDATE usuario SET usu_cedula = '$cedula', usu_nombres='$nombre', usu_apellidos='$apellido', 
+            usu_direccion = '$direccion', usu_telefono='$telefono', usu_correo = '$correo', usu_password=MD5('$pass'),
+            usu_fecha_nacimiento = '$fecha', usu_fecha_modificacion = now() where usu_correo = '$id_org'";
+        if($conexion->query($sql) === TRUE){
+            echo "<p>Se han actualizado los datos correctamente</p>";
+        }else{
+            echo "<p>No se ha podido actualizar los datos del usuario</p>";
+        }
+        $conexion->close();
     }

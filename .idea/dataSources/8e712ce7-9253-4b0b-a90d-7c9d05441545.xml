@@ -1378,133 +1378,142 @@
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="345" parent="333" name="PRIMARY">
+    <index id="345" parent="333" name="fk_remitente_usuario">
+      <ColNames>reu_remitente</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="346" parent="333" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>reu_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="346" parent="334" name="usu_codigo">
+    <foreign-key id="347" parent="333" name="fk_remitente_usuario">
+      <ColNames>reu_remitente</ColNames>
+      <RefTableName>usuario</RefTableName>
+      <RefColNames>usu_codigo</RefColNames>
+    </foreign-key>
+    <column id="348" parent="334" name="usu_codigo">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="347" parent="334" name="usu_cedula">
+    <column id="349" parent="334" name="usu_cedula">
       <Position>2</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="348" parent="334" name="usu_nombres">
+    <column id="350" parent="334" name="usu_nombres">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="334" name="usu_apellidos">
+    <column id="351" parent="334" name="usu_apellidos">
       <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="350" parent="334" name="usu_direccion">
+    <column id="352" parent="334" name="usu_direccion">
       <Position>5</Position>
       <DataType>varchar(75)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="351" parent="334" name="usu_telefono">
+    <column id="353" parent="334" name="usu_telefono">
       <Position>6</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="352" parent="334" name="usu_correo">
+    <column id="354" parent="334" name="usu_correo">
       <Position>7</Position>
       <DataType>varchar(70)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="353" parent="334" name="usu_password">
+    <column id="355" parent="334" name="usu_password">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="354" parent="334" name="usu_fecha_nacimiento">
+    <column id="356" parent="334" name="usu_fecha_nacimiento">
       <Position>9</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="355" parent="334" name="usu_eliminado">
+    <column id="357" parent="334" name="usu_eliminado">
       <Position>10</Position>
       <DataType>varchar(1)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;N&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="356" parent="334" name="usu_fecha_creacion">
+    <column id="358" parent="334" name="usu_fecha_creacion">
       <Position>11</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="357" parent="334" name="usu_fecha_modificacion">
+    <column id="359" parent="334" name="usu_fecha_modificacion">
       <Position>12</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="358" parent="334" name="usu_rol">
+    <column id="360" parent="334" name="usu_rol">
       <Position>13</Position>
       <DataType>varchar(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="359" parent="334" name="PRIMARY">
+    <key id="361" parent="334" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>usu_codigo</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="360" parent="335" name="usu_reu_id">
+    <column id="362" parent="335" name="usu_reu_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="361" parent="335" name="usuario_id">
+    <column id="363" parent="335" name="usuario_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="362" parent="335" name="reunion_id">
+    <column id="364" parent="335" name="reunion_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="363" parent="335" name="fk_usuario_id">
+    <index id="365" parent="335" name="fk_usuario_id">
       <ColNames>usuario_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="364" parent="335" name="fk_reunion_id">
+    <index id="366" parent="335" name="fk_reunion_id">
       <ColNames>reunion_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="365" parent="335" name="PRIMARY">
+    <key id="367" parent="335" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>usu_reu_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="366" parent="335" name="fk_usuario_id">
+    <foreign-key id="368" parent="335" name="fk_usuario_id">
       <ColNames>usuario_id</ColNames>
       <RefTableName>usuario</RefTableName>
       <RefColNames>usu_codigo</RefColNames>
     </foreign-key>
-    <foreign-key id="367" parent="335" name="fk_reunion_id">
+    <foreign-key id="369" parent="335" name="fk_reunion_id">
       <ColNames>reunion_id</ColNames>
       <RefTableName>reunion</RefTableName>
       <RefColNames>reu_id</RefColNames>

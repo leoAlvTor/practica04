@@ -52,8 +52,7 @@ function buscarXMotivo(){
 }
 
 function editarCuenta(){
-    alert('ES SHAMADO');
-    window.location='../../vista/user/ActualizarDatos.html';
+    window.location='../../vista/user/ActualizarDatos.html?correo='+document.getElementById('reu_remitente').value;
 }
 
 function actualizarCuenta(){
@@ -72,10 +71,10 @@ function actualizarCuenta(){
     let params = 'funcion=update&id='+id_original+"&cedula="+cedula+"&nombre="+nombre+"&apellido="+apellido+
         "&direccion="+direccion+"&telefono="+telefono+"&correo="+correo+"&pass="+pass+"&fecha="+fecha;
     xmlhttp.open('POST', url, true);
-    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlenconded');
+    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xmlhttp.onreadystatechange = function () {
         if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
-            document.getElementById('retorno').value = this.responseText;
+           alert(this.responseText);
         }
     };
     xmlhttp.send(params);
